@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>دعوة حنة نعمة</title>
+  <meta name="description" content="دعوة حنة نعمة - تجربة رقمية أنيقة بطابع عربي فاخر" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Lateef&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Rakkas&family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="is-locked">
+
+  <audio id="bgMusic" preload="none" loop>
+    <source src="assets/audio/henna-song.mp3" type="audio/mpeg" />
+  </audio>
+
+  <section class="hero" id="hero">
+    <div class="bg"></div>
+    <div class="glow"></div>
+    <div class="overlay-pattern"></div>
+
+    <div class="scene-wrapper">
+      <div class="scene" id="scene" aria-label="دعوة الحنة">
+        <img
+          src="assets/images/envelope/envelope-closed.png"
+          alt="ظرف الدعوة مغلق"
+          class="envelope closed"
+          id="closedEnvelope"
+        />
+
+        <img
+          src="assets/images/envelope/envelope-open.png"
+          alt="ظرف الدعوة مفتوح"
+          class="envelope open"
+          id="openEnvelope"
+        />
+
+        <img
+          src="assets/images/letter/letter.png"
+          alt="بطاقة الدعوة"
+          class="letter"
+          id="letter"
+        />
+
+        <img
+          src="assets/images/seal/wax-seal.png"
+          alt="ختم الشمع"
+          class="seal"
+          id="seal"
+          role="button"
+          tabindex="0"
+          aria-label="افتحي الدعوة"
+        />
+      </div>
+
+      <p class="hint" id="hint">اضغطي على الختم لفتح الدعوة</p>
+
+      <button class="scroll-btn hidden" id="scrollBtn" type="button">
+        تابعي الدعوة
+      </button>
+    </div>
+  </section>
+
+  <main id="mainContent">
+    <section class="section reveal">
+      <div class="container">
+        <div class="card poem-card">
+          <span class="eyebrow">دعوة حنّة</span>
+          <h1 class="section-title">حنة نعمة</h1>
+          <div class="poem">
+            <p>
+              في كفوفِ نَعمةَ حنّةٌ تُزَيِّن وتُنوِّر،
+              <br />
+              وفي عيونِنا دمعُ فرحٍ يُروى ولا يُوصَف،
+              <br />
+              الليلة نَعمةُ عروسٌ… والبِشرُ يملأ القلوب،
+              <br />
+              يا ربّ تَمِّم لها على خيرٍ، واكتب لها أجملَ النصيب.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container">
+        <div class="card centered-card">
+          <span class="eyebrow">فرحة الحنّة</span>
+          <h2 class="section-subtitle">نتشرّف بدعوتكم لمشاركتنا فرحة حنّة العروسة</h2>
+          <p class="section-text">
+            ليلة مميزة مليانة حب ودفا ولمّة حلوة… وجودكم بينا هو اللي هيكمل الفرحة.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container">
+        <div class="card date-card">
+          <span class="eyebrow">تاريخ المناسبة</span>
+          <div class="date-line">24 - 6 - 2026</div>
+          <div class="ornament"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container">
+        <div class="card countdown-card">
+          <span class="eyebrow">العد التنازلي</span>
+          <div class="countdown-grid">
+            <div class="count-item"><strong id="months">0</strong><span>شهور</span></div>
+            <div class="count-item"><strong id="days">0</strong><span>أيام</span></div>
+            <div class="count-item"><strong id="hours">00</strong><span>ساعات</span></div>
+            <div class="count-item"><strong id="minutes">00</strong><span>دقائق</span></div>
+            <div class="count-item"><strong id="seconds">00</strong><span>ثواني</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container">
+        <div class="two-col">
+          <div class="card venue-card">
+            <span class="eyebrow">مكان الحفل</span>
+            <h2 class="section-subtitle">قاعة الماسة جاردن</h2>
+            <p class="section-text">
+              في انتظاركم في أجواء أنيقة واحتفالية خاصة تليق بليلة الحنّة.
+            </p>
+
+            <div class="venue-image">
+              <img src="assets/images/backgrounds/venue-image.png" alt="قاعة الماسة جاردن" />
+            </div>
+
+            <a
+              class="map-link"
+              href="https://www.google.com/maps?q=31.3548022,27.2356479"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              فتح لوكيشن القاعة على Google Maps
+            </a>
+          </div>
+
+          <div class="card message-card">
+            <span class="eyebrow">رسالة للعروسة</span>
+            <h2 class="section-subtitle">اتركي لمستك الخاصة</h2>
+
+            <form
+              id="messageForm"
+              class="message-form"
+              action="https://formspree.io/f/xvzdrjyj"
+              method="POST"
+            >
+              <div class="message-preview" id="messagePreview">
+                <p id="previewText">اكتبي رسالة جميلة للعروسة… ✨</p>
+              </div>
+
+              <label class="field-label" for="guestName">اسمك</label>
+              <input
+                type="text"
+                id="guestName"
+                name="name"
+                placeholder="اكتبي اسمك"
+              />
+
+              <label class="field-label" for="brideMessage">رسالتك</label>
+              <textarea
+                id="brideMessage"
+                name="message"
+                rows="5"
+                placeholder="اكتبي رسالة جميلة للعروسة..."
+                required
+              ></textarea>
+
+              <input type="hidden" name="_subject" value="رسالة جديدة للعروسة 💌" />
+              <input type="hidden" name="_language" value="ar" />
+
+              <div class="controls">
+                <div class="control">
+                  <label class="field-label">لون الخلفية</label>
+                  <div class="color-row">
+                    <button class="color-btn is-active" data-bg="#fff8f1" type="button" style="background:#fff8f1;"></button>
+                    <button class="color-btn" data-bg="#f6ebef" type="button" style="background:#f6ebef;"></button>
+                    <button class="color-btn" data-bg="#5a1630" type="button" style="background:#5a1630;"></button>
+                    <button class="color-btn" data-bg="#ece3d7" type="button" style="background:#ece3d7;"></button>
+                  </div>
+                </div>
+
+                <div class="control">
+                  <label class="field-label">لون الخط</label>
+                  <div class="color-row">
+                    <button class="font-btn is-active" data-color="#5a1630" type="button" style="background:#5a1630;"></button>
+                    <button class="font-btn" data-color="#c9a252" type="button" style="background:#c9a252;"></button>
+                    <button class="font-btn" data-color="#ffffff" type="button" style="background:#ffffff; border:1px solid #ddd;"></button>
+                    <button class="font-btn" data-color="#2b2b2b" type="button" style="background:#2b2b2b;"></button>
+                  </div>
+                </div>
+
+                <div class="control">
+                  <label class="field-label" for="fontFamily">نوع الخط</label>
+                  <select id="fontFamily">
+                    <option value="'Cairo', sans-serif">Cairo</option>
+                    <option value="'Noto Naskh Arabic', serif">Noto Naskh Arabic</option>
+                    <option value="'Amiri', serif">Amiri</option>
+                    <option value="'Lateef', cursive">Lateef</option>
+                    <option value="'Rakkas', serif">Rakkas</option>
+                    <option value="'Reem Kufi', sans-serif">Reem Kufi</option>
+                  </select>
+                </div>
+
+                <div class="control">
+                  <label class="field-label" for="fontSize">حجم الخط</label>
+                  <input type="range" id="fontSize" min="18" max="34" value="24" />
+                </div>
+              </div>
+
+              <button class="send-btn" id="sendBtn" type="submit">
+                <span class="btn-text">إرسال الرسالة للعروسة 💌</span>
+                <span class="btn-loader" aria-hidden="true"></span>
+              </button>
+
+              <p class="form-note">رسالتك هتوصل وتتخزن بأمان ✨</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="success-modal" id="successModal" aria-hidden="true">
+    <div class="success-backdrop" id="successBackdrop"></div>
+
+    <div class="success-card" role="dialog" aria-modal="true" aria-labelledby="successTitle">
+      <div class="success-icon-wrap">
+        <div class="success-ring"></div>
+        <div class="success-icon">✓</div>
+      </div>
+
+      <h3 id="successTitle">وصلت الرسالة بنجاح</h3>
+      <p>
+        شكرًا لذوقك ولمستك الجميلة… رسالتك بقت جزء من فرحة الليلة 💖
+      </p>
+
+      <button type="button" class="success-close" id="successClose">
+        إغلاق
+      </button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
